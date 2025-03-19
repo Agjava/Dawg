@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Veni Vici</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DAWG</h1>
+            <p>Discover random dogs! Ban breeds you don't want to see again.</p>
+        </header>
+        
+        <main>
+            <div class="dog-container">
+                <div id="dog-card" class="hidden">
+                    <img id="dog-image" src="" alt="A dog">
+                    <div class="dog-info">
+                        <h2 id="dog-name">Loading...</h2>
+                        <div class="dog-attributes">
+                            <p><strong>Breed:</strong> <span id="dog-breed" class="attribute" data-type="breed">Unknown</span></p>
+                            <p><strong>Breed Group:</strong> <span id="dog-group" class="attribute" data-type="group">Unknown</span></p>
+                            <p><strong>Temperament:</strong> <span id="dog-temperament" class="attribute" data-type="temperament">Unknown</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button id="fetch-dog-btn">Fetch a Dog!</button>
+            </div>
+            
+            <div class="ban-section">
+                <h2>Ban List</h2>
+                <p class="ban-instruction">Click on any attribute to ban it from future results</p>
+                <div class="ban-lists">
+                    <div class="ban-list">
+                        <h3>Banned Breeds</h3>
+                        <ul id="banned-breeds"></ul>
+                    </div>
+                    <div class="ban-list">
+                        <h3>Banned Groups</h3>
+                        <ul id="banned-groups"></ul>
+                    </div>
+                    <div class="ban-list">
+                        <h3>Banned Temperaments</h3>
+                        <ul id="banned-temperaments"></ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="history-section">
+                <h2>History</h2>
+                <div id="history-container"></div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
